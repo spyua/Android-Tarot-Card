@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Draw Card"
+        android:textSize="20dp"
+        android:background="@color/transparent"
+        android:id="@+id/btn_draw"
+        android:textColor="@drawable/btn_text_color"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/tarlot_img1"
+        android:layout_toEndOf="@+id/tarlot_img1"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="170dp"
+        android:id="@+id/tarlot_img1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+       />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shuffle"
+        android:textSize="20dp"
+        android:id="@+id/btn_shullf"
+        android:textColor="@drawable/btn_text_color"
+        android:background="@color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:id="@+id/result_txt"
+        android:layout_below="@+id/tarlot_img1"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
